@@ -26,4 +26,8 @@ foreach ($output as $file) {
     $exit_status = 1;
 }
 
+if($exit_status == 1){
+	echo "\nSYNTAX ERROR: files were not commited!\n\n";
+} 
+
 exit($exit_status);
